@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #242424;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-parent {
+  perspective: 1000px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.u-d-flex {
   display: flex;
   flex-direction: column;
+}
+
+.u-align-center {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-wrap {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  transform-style: preserve-3d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.u-mb-3 {
+  margin-bottom: 3em;
+}
+
+.card {
+  display: flex;
+  font-family: 'Eudoxus Sans';
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  transform-origin: center;
+}
+
+.cc-front {
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.cc-back {
+  justify-content: space-between;
+  background-color: #AFFC41;
+  z-index: 1;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.btn {
+  font-family: 'Eudoxus Sans';
+  font-size: 16px;
+  background-color: #303030;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #fff;
+  border-radius: 50vw;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+
+.btn:hover {
+  background-color: #3a3a3a;
+}
+
+h1 {
+  font-family: 'Oranienbaum';
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  font-size: 40px;
+  line-height: 95%;
+  margin-top: 0;
+}
+
+.description-text {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 140%;
 }
