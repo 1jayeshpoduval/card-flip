@@ -1,6 +1,8 @@
-This is a card flip animation built with React and Framer Motion. The card flips when the 'Flip' button is clicked, providing a smooth and engaging visual effect.
+# React + Vite
 
-Features
-Card Flip Animation: Click the 'Flip' button to see the card flip.
-Smooth Transitions: Utilizes Framer Motion for seamless and visually appealing animations.
-Simple and Lightweight: Easy to understand and modify, perfect for beginners.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

@@ -10,7 +10,6 @@
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .card-parent {
@@ -40,13 +39,14 @@
 
 .card {
   display: flex;
-  font-family: 'Eudoxus Sans';
+  font-family: "Eudoxus Sans";
   flex-direction: column;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  color: black;
   border-radius: 1em;
   padding-left: 1em;
   padding-right: 1em;
@@ -65,14 +65,14 @@
 
 .cc-back {
   justify-content: space-between;
-  background-color: #AFFC41;
+  background-color: #affc41;
   z-index: 1;
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
 
 .btn {
-  font-family: 'Eudoxus Sans';
+  font-family: "Eudoxus Sans";
   font-size: 16px;
   background-color: #303030;
   padding-left: 2.5em;
@@ -90,7 +90,7 @@
 }
 
 h1 {
-  font-family: 'Oranienbaum';
+  font-family: "Oranienbaum";
   font-weight: 500;
   letter-spacing: -0.05em;
   font-size: 40px;
