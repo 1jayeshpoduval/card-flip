@@ -9,10 +9,13 @@ function App() {
   };
 
   return (
-    <section className="section">
-      <div className="container u-d-flex u-align-center">
+    <section className="w-screen h-screen bg-almost-black">
+      <div className="flex flex-col items-center justify-center w-90% h-full max-w-screen-2xl mx-auto u-d-flex u-align-center">
         <Card flipped={flipState} />
-        <div className="btn" onClick={cardFlip}>
+        <div
+          className="bg-btn-primary font-Eudoxus sans px-10 py-2 text-white rounded-full cursor-pointer hover:bg-btn-hover transition-colors"
+          onClick={cardFlip}
+        >
           FLIP
         </div>
       </div>

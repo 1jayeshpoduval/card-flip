@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const Card = (props) => {
   return (
-    <div className="card-parent">
+    <div className="perspective-1000">
       <motion.div
-        className="card-wrap u-mb-3"
+        className="relative w-250px h-350px my-12 preserve-3d"
         initial={{ rotateY: 0 }}
         animate={{
           rotateY: props.flipped ? 180 : 0,
@@ -17,12 +17,14 @@ const Card = (props) => {
           damping: 18,
         }}
       >
-        <div className="card cc-front">
+        <div className="flex flex-col items-center justify-center rounded-2xl bg-white z-20 px-4 py-6 absolute top-0 right-0 bottom-0 left-0 text-black transform-center backface-hidden">
           <Logo />
         </div>
-        <div className="card cc-back">
-          <h1>Hello — my name is Jayesh.</h1>
-          <div className="description-text">
+        <div className="flex flex-col justify-between rounded-2xl bg-brand-green z-10 px-4 py-6 absolute top-0 right-0 bottom-0 left-0 text-black transform-center backface-hidden transformY-180">
+          <h1 className="font-regular tracking-tighter text-4xl leading-tight mx-0">
+            Hello — my name is Jayesh.
+          </h1>
+          <div className="text-lg font-medium tracking-tight leading-normal">
             I am a interface and interaction designer based in Sydney.
           </div>
         </div>
